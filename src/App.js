@@ -4,7 +4,7 @@ import "./App.scss";
 
 import Home from "./Components/routes/home/home";
 import Navigation from './Components/routes/navigation/navigation';
-import SignIn from "./Components/routes/signin/signin";
+import Authentication from "./Components/routes/authentication/Authentication.component";
 
 const Shop = () => {
   return <h1>I am the shop Page</h1>;
@@ -16,7 +16,7 @@ function App() {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
-        <Route path="sign-in" element={<SignIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
