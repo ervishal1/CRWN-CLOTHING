@@ -10,16 +10,35 @@
     top: 90px;
     right: 40px;
     z-index: 5;
+    animation: dropdownOpen .3s ease-out;
   
     .cart-items {
       height: 240px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
-      scroll-snap-type: none;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
     }
   
     button {    
         margin-top: auto;
+    }
+  }
+
+  @keyframes dropdownOpen {
+    0%{
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    25%{
+      opacity: 1;
+      transform: translateX(20%);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
     }
   }
