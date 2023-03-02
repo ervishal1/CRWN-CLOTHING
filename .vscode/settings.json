@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "Crwn",
-        "firestore"
+        "firestore",
+        "middlewares",
+        "persistor"
     ]
 }
