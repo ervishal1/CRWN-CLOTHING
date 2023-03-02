@@ -3,9 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { ReactComponent as CrwnLogo } from "../../../assets/crown.svg";
 import { selectIsCartOpen } from "../../../store/cart/cart.selector";
-import { setCurrentUser, signOutStart } from "../../../store/user/user.actions";
+import {  signOutStart } from "../../../store/user/user.actions";
 import { selectCurrentUser } from "../../../store/user/user.selector";
-import { signOutUser } from "../../../utils/firebase.utils";
 import CartDropdown from "../../cart-dropdown/cart-dropdown.component";
 import CartIcon from "../../cart-icon/cart-icon.component";
 import {

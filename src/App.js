@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
    dispatch(checkUserSession())
-  }, []);
+  }, [dispatch]);
 
   return (
     <Routes>
